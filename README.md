@@ -23,4 +23,6 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss4.png?raw=true" width="700" height="400" /><br />
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss5.png?raw=true" width="700" height="400" /><br />
 
-
+# How to run file using crontab
+<b>crontab -e</b><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss_crontab.png?raw=true" width="700" height="400" /><br />
