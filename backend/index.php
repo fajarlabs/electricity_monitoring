@@ -1,7 +1,7 @@
 <?php
 
 // save data
-// http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature_1=0&temperature_2=0
+// http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature=0&humidity=0
 // get data
 // http://emon.fajarlabs.com/?act=get
 
@@ -18,28 +18,41 @@ $act = isset($_GET["act"]) ? $_GET["act"] : "";
 $r = isset($_GET["r"]) ? $_GET["r"] : "";
 $s = isset($_GET["s"]) ? $_GET["s"] : "";
 $t = isset($_GET["t"]) ? $_GET["t"] : "";
-$temperature_1 = isset($_GET["temperature_1"]) ? $_GET["temperature_1"] : "";
-$temperature_2 = isset($_GET["temperature_2"]) ? $_GET["temperature_2"] : "";
+$temperature = isset($_GET["temperature"]) ? $_GET["temperature"] : "";
+$humidity = isset($_GET["humidity"]) ? $_GET["humidity"] : "";
 
-function add_raw($r, $s, $t, $temperature_1, $temperature_2, &$conn){
-    $sql = "INSERT INTO src_raw_data (r, s, t, temperature_1, temperature_2)
+function add_raw($r, $s, $t, $temperature, $humidity, &$conn){
+    $sql = "INSERT INTO src_raw_data (r, s, t, temperature, humidity)
     VALUES (?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("iiiii", $r, $s, $t, $temperature_1, $temperature_2);
+    $stmt->bind_param("iiiii", $r, $s, $t, $temperature, $humidity);
     
     $stmt->execute();
     $stmt->close();
 }
 
-function update_raw_api($r, $s, $t, $temperature_1, $temperature_2, &$conn){
-    $sql = "UPDATE src_raw_data_api SET r = ?, s = ?, t = ?, temperature_1 = ?, temperature_2 = ? ";
-    
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("iiiii", $r, $s, $t, $temperature_1, $temperature_2);
-    
-    $stmt->execute();
-    $stmt->close();
+function update_raw_api($r, $s, $t, $temperature, $humidity, &$conn){
+    $result = $conn->query("SELECT COUNT(*) as total FROM src_raw_data_api");
+    $result = $result->fetch_assoc();
+    if($result["total"] < 1) {
+        $sql = "INSERT INTO src_raw_data_api (r, s, t, temperature, humidity)
+        VALUES (?, ?, ?, ?, ?)";
+        
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("iiiii", $r, $s, $t, $temperature, $humidity);
+        
+        $stmt->execute();
+        $stmt->close();
+    } else {
+        $sql = "UPDATE src_raw_data_api SET r = ?, s = ?, t = ?, temperature = ?, humidity = ? ";
+        
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("iiiii", $r, $s, $t, $temperature, $humidity);
+        
+        $stmt->execute();
+        $stmt->close();
+    }
 }
 
 function get_all(&$conn) {
@@ -53,8 +66,8 @@ function get_all(&$conn) {
 }
 
 if($act == 'add'){
-    update_raw_api($r, $s, $t, $temperature_1, $temperature_2, $conn);
-    add_raw($r, $s, $t, $temperature_1, $temperature_2, $conn);
+    update_raw_api($r, $s, $t, $temperature, $humidity, $conn);
+    add_raw($r, $s, $t, $temperature, $humidity, $conn);
     $data->success = true;
     $data->response = "The request was successfully completed.";
     $data->code = 200;
