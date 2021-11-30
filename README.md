@@ -5,11 +5,13 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 
 # Backend
 <h5>Rest-API</h5>
+
 # Environment
 <b>PHP version 7.3</b>
 <b>XAMPP Software</b>
+
 # Files
-``````<index class="php"></index>``````
+<b>index.php</b>
 
 <h5> Rest-API untuk menyimpan data R,S,T, Temperature & Humidity </h5>
 <b>http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature=0&humidity=0</b><br />
