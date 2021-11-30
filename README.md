@@ -17,10 +17,10 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 <b>index.php</b>
 
 # How to Wifi setup on Raspberry-pi
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss1.png?raw=true" width="700" height="600" /><br />
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss2.png?raw=true" width="700" height="600" /><br />
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss3.png?raw=true" width="700" height="600" /><br />
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss4.png?raw=true" width="700" height="600" /><br />
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss5.png?raw=true" width="700" height="600" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss1.png?raw=true" width="700" height="400" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss2.png?raw=true" width="700" height="400" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss3.png?raw=true" width="700" height="400" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss4.png?raw=true" width="700" height="400" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss5.png?raw=true" width="700" height="400" /><br />
 
 
