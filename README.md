@@ -1,7 +1,7 @@
 # electricity_monitoring
 Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/electricity_monitoring.jpg?raw=true" width="700" height="600" /><br />
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/design-architecture.jpg?raw=true" width="700" height="600" /><br />
 
 # Backend
 <h5> How to save data </h5>
