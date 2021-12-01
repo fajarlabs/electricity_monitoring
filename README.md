@@ -65,8 +65,7 @@ lalu tambahkan skrip dibawah ini :
 @reboot python /home/pi/skripsi/app.py
 ```
 
+<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss_crontab.png?raw=true" width="700" height="400" /><br />
+
 # Android Apps
 waiting..
-
-
-<img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss_crontab.png?raw=true" width="700" height="400" /><br />
