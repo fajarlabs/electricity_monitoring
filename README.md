@@ -6,6 +6,16 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 # Backend
 <h5> Rest-API untuk menyimpan data R,S,T, Temperature & Humidity </h5>
 <b>http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature=0&humidity=0</b><br />
+<b> Response : </b><br />
+
+```
+{
+    "success": true,
+    "response": "The request was successfully completed.",
+    "code": 200
+}
+```
+
 <h5> Rest-API untuk mengambil data terbaru </h5>
 <b>http://emon.fajarlabs.com/?act=get</b><br />
 <b> Response : </b><br />
