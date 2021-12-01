@@ -4,6 +4,8 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/design-architecture.jpg?raw=true" width="700" height="600" /><br />
 
 # Backend
+<h5>Hosting</h5>
+<b> Menggunakan hosting www.dewaweb.com </b>
 <h5> Rest-API untuk menyimpan data R,S,T, Temperature & Humidity </h5>
 <b>http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature=0&humidity=0</b><br />
 <b> Response : </b><br />
@@ -55,6 +57,9 @@ lalu tambahkan skrip dibawah ini :
 ```
 @reboot python /home/pi/skripsi/app.py
 ```
+
+# Android Apps
+waiting..
 
 
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss_crontab.png?raw=true" width="700" height="400" /><br />
