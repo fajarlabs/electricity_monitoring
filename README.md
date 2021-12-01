@@ -8,9 +8,7 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 <b>http://emon.fajarlabs.com/?act=add&r=0&s=0&t=0&temperature=0&humidity=0</b><br />
 <h5> Rest-API untuk mengambil data terbaru </h5>
 <b>http://emon.fajarlabs.com/?act=get</b><br />
-```
-{"success":true,"response":{"r":"1","s":"0","t":"0","temperature":"30","humidity":"71"},"code":200}
-```
+```{"success":true,"response":{"r":"1","s":"0","t":"0","temperature":"30","humidity":"71"},"code":200}```
 
 # Environment
 <b>PHP version 7.3</b>
