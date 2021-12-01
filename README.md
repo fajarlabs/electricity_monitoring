@@ -27,11 +27,14 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 ```
 
 # Environment
-<b>PHP version 7.3</b>
+<b>PHP version 7.3</b><br />
 <b>XAMPP Software</b>
 
 # Files
-<b>index.php</b>
+
+```
+index.php
+```
 
 # How to Wifi setup on Raspberry-pi
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss1.png?raw=true" width="700" height="400" /><br />
@@ -41,5 +44,15 @@ Rangkaian dan aplikasi untuk monitoring listrik jarak jauh.
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss5.png?raw=true" width="700" height="400" /><br />
 
 # How to run file using crontab
-<b>crontab -e</b><br />
+<b>CMD</b><br />
+
+```
+crontab -e
+
+lalu tambahkan skrip dibawah ini :
+
+@reboot python /home/pi/skripsi/app.py
+```
+
+
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss_crontab.png?raw=true" width="700" height="400" /><br />
