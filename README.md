@@ -48,9 +48,11 @@ index.php
 
 ```
 crontab -e
+```
 
 lalu tambahkan skrip dibawah ini :
 
+```
 @reboot python /home/pi/skripsi/app.py
 ```
 
