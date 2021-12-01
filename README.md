@@ -42,9 +42,9 @@ index.php
 
 <h5>Login</h5>
 Ketikan di terminal CMD / putty
-ssh pi@[hostname / ip]<br />
-User : <b>pi</b>
-Pass : <b>raspbery</b><br />
+ssh pi@[hostname / ip]<br /><br />
+User : <b>pi</b><br />
+Pass : <b>raspbery</b><br /><br />
 
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss1.png?raw=true" width="700" height="400" /><br />
 <img src="https://github.com/fajarlabs/electricity_monitoring/blob/master/screen-capture/ss2.png?raw=true" width="700" height="400" /><br />
